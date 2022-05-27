@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Navbar from './components/Navbar'
 
 export default function Home() {
   return (
@@ -11,6 +12,20 @@ export default function Home() {
       </Head>
 
 
+      <Navbar />
+      <main>
+        <div className='container mx-auto'>
+          <div className='mt-8'>
+            <h1 className='text-3xl'>Big Guzzlers Club</h1>
+            <p>Learn How to Invest</p>
+            <p>See Environemtal Stocks</p>
+            <p>Invest and Grow Your Garden</p>
+            <p>Grow Your Garden and Save Trees</p>
+            <p>Visually See Your Profit Grow</p>
+          </div>
+
+        </div>
+      </main>
 
     </div>
   )
