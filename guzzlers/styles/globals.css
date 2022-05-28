@@ -4,9 +4,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400&display=swap');
 
 @layer base {
-
   body {
     font-family: 'Montserrat', sans-serif;
   }
 
+  body {
+    @apply bg-neutral-800
+  }
+
+  p {
+    @apply text-neutral-300 font-semibold text-xl
+  }
+
+  h1 {
+    @apply text-neutral-300 font-semibold text-3xl
+  }
 }

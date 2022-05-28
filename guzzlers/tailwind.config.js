@@ -9,7 +9,6 @@ module.exports = {
     colors: {
       white: colors.white,
       black: colors.black,
-      emerald: colors.emerald,
       neutral: colors.neutral,
     }
   },

@@ -1,8 +1,26 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Navbar from './components/Navbar'
+import { initializeApp } from "firebase/app";
 
 export default function Home() {
+
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyCmUVGiC_oNDT7sqPoaw3OqUYYDKeP4CFE",
+    authDomain: "green-guzzlers.firebaseapp.com",
+    projectId: "green-guzzlers",
+    storageBucket: "green-guzzlers.appspot.com",
+    messagingSenderId: "209562172471",
+    appId: "1:209562172471:web:9aff79df1135b79829d3b2",
+    measurementId: "G-4DMY12LWS6"
+  };
+
+  const app = initializeApp(firebaseConfig);
+
+
+
+
   return (
     <div>
       <Head>
@@ -11,11 +29,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-
       <Navbar />
       <main>
         <div className='container mx-auto'>
-          <div className='mt-8'>
+          <div className='pt-8'>
             <h1 className='text-3xl'>Big Guzzlers Club</h1>
             <p>Learn How to Invest</p>
             <p>See Environemtal Stocks</p>
@@ -23,7 +40,6 @@ export default function Home() {
             <p>Grow Your Garden and Save Trees</p>
             <p>Visually See Your Profit Grow</p>
           </div>
-
         </div>
       </main>
 
