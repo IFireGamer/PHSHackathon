@@ -1,25 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Navbar from './components/Navbar'
-import { initializeApp } from "firebase/app";
+import Navbar from '../components/Navbar'
+import { auth } from "../firebase/clientApp";
+import { useAuthState } from "react-firebase-hooks/auth";
 
 export default function Home() {
 
-
-  const firebaseConfig = {
-    apiKey: "AIzaSyCmUVGiC_oNDT7sqPoaw3OqUYYDKeP4CFE",
-    authDomain: "green-guzzlers.firebaseapp.com",
-    projectId: "green-guzzlers",
-    storageBucket: "green-guzzlers.appspot.com",
-    messagingSenderId: "209562172471",
-    appId: "1:209562172471:web:9aff79df1135b79829d3b2",
-    measurementId: "G-4DMY12LWS6"
-  };
-
-  const app = initializeApp(firebaseConfig);
-
-
-
+  // Firebase user status
+  const [user, loading, error] = useAuthState(auth);
 
   return (
     <div>
@@ -29,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar />
+      <Navbar user={user} />
       <main>
         <div className='container mx-auto'>
           <div className='pt-8'>
@@ -41,6 +29,7 @@ export default function Home() {
             <p>Visually See Your Profit Grow</p>
           </div>
         </div>
+
       </main>
 
     </div>

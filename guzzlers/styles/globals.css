@@ -19,4 +19,8 @@
   h1 {
     @apply text-neutral-300 font-semibold text-3xl
   }
+
+  input {
+    @apply text-black
+  }
 }
