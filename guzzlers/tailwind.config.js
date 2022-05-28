@@ -11,7 +11,8 @@ module.exports = {
       black: colors.black,
       neutral: colors.neutral,
 
-      grassgreen: '#1FDA80'
+      grassgreen: '#1FDA80',
+      brown: '#393424'
     }
   },
   plugins: [],
