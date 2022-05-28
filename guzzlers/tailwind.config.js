@@ -10,6 +10,8 @@ module.exports = {
       white: colors.white,
       black: colors.black,
       neutral: colors.neutral,
+
+      grassgreen: '#1FDA80'
     }
   },
   plugins: [],
