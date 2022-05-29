@@ -5,6 +5,9 @@ import FirstPage from '../components/FirstPage'
 import SecondPage from '../components/SecondPage'
 import ThirdPage from '../components/ThirdPage'
 
+import ClientPage from '../components/ClientPage'
+//import Navbar from '../components/Navbar'
+
 import { auth } from "../firebase/clientApp";
 import { useAuthState } from "react-firebase-hooks/auth";
 
@@ -53,6 +56,9 @@ export default function Home() {
         <SecondPage />
         <ThirdPage />
         <LoginButton user={user}/>
+        <LoginButton />
+        {/* <ClientPage /> */}
+
       </main>
 
     </div>
