@@ -11,7 +11,7 @@ export default function dashboard() {
       <main>
         <div className="flex w-screen h-screen">
           <div className="m-auto p-16 bg-white text-center text-black rounded-md font-semibold text-3xl">
-            <h1 className="text-4xl">Dashboard</h1>
+            <h1 className="text-4xl">Account</h1>
           </div>
         </div>
       </main>

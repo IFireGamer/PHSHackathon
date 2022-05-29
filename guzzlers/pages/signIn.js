@@ -6,6 +6,7 @@ import {
   signInWithEmailAndPassword,
 } from "firebase/auth";
 import { auth } from "../firebase/clientApp";
+import Nav from "../components/nav";
 
 export default function signIn() {
   const [email, setEmail] = useState("");
@@ -15,7 +16,9 @@ export default function signIn() {
   return (
     <div>
       <Head></Head>
+      <Nav />
       <main>
+          
         <div className="flex w-screen h-screen">
           <div className="m-auto p-16 bg-white text-center text-black rounded-md font-semibold text-3xl">
             <h1 className="text-4xl">Sign in to Green.house</h1>
