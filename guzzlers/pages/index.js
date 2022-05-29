@@ -4,14 +4,13 @@ import LoginButton from '../components/LoginButton'
 import FirstPage from '../components/FirstPage'
 import SecondPage from '../components/SecondPage'
 import ThirdPage from '../components/ThirdPage'
-/* import Navbar from '../components/Navbar'
+
 import { auth } from "../firebase/clientApp";
-import { useAuthState } from "react-firebase-hooks/auth"; */
+import { useAuthState } from "react-firebase-hooks/auth";
 
 export default function Home() {
 
-  // Firebase user status
-  //const [user, loading, error] = useAuthState(auth);
+  const [user, loading, error] = useAuthState(auth);
 
 
   const axios = require("axios").default;
@@ -53,8 +52,7 @@ export default function Home() {
         <FirstPage />
         <SecondPage />
         <ThirdPage />
-        <LoginButton />
-
+        <LoginButton user={user}/>
       </main>
 
     </div>
